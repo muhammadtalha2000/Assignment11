@@ -144,4 +144,229 @@
 // hasn't been declared beforehand. Use any variable you like 
 // to represent the Date object.
 
-var date = new Date();
+//CHAPTER # 35 -38
+
+// 1. Write a function that displays current date & time in your 
+// browser.
+
+// function showDate (){
+//     var date = new Date()
+//     document.write(date)
+// }
+
+// showDate();
+
+// 2. Write a function that takes first & last name and then it 
+// greets the user using his full name.
+
+// function greetings() {
+//  var firstName = prompt("Enter Your First Name");
+//  var lastName =  prompt("Enter Your Last Name");
+//  var fullName = firstName + " " + lastName;
+//  alert("Welcome" + " " + fullName)
+// }
+
+// greetings()
+
+// 3. Write a function that adds two numbers (input by user) 
+// and returns the sum of two numbers
+
+// function sum() {
+//     var number1 = +prompt("Enter first number")
+//     var number2 = +prompt("Enter last number")
+//     var sum = number1  + number2;
+//     alert(sum)
+// }
+
+// sum()
+
+// 4. Calculator:
+// Write a function that takes three arguments num1, num2 
+// & operator & compute the desired operation. Return and 
+// show the desired result in your browser.
+
+// function calculator() {
+//     var number1 = +prompt("Enter first number")
+//     var sign = prompt("Enter Operator")
+//     var number2 = +prompt("Enter last number")
+//     if (sign === "+") {
+//         alert(number1 + number2)
+//     }
+//     else if (sign === "*") {
+//         alert(number1 * number2)
+//     }
+//     else if (sign === "-") {
+//         alert(number1 - number2)
+//     }
+//     else if (sign === "/") {
+//         alert(number1 / number2)
+//     }
+//     else if (sign === "%") {
+//         alert(number1 % number2)
+//     }
+//     else{
+//         alert("Enter correct operator")
+//     }
+// }
+
+// calculator()
+
+// 5. Write a function that squares its argument.
+
+// function square (){
+//     var number = +prompt("Enter Any Number");
+//     var square = number * number;
+//     alert("Square of" + " " + number + " " + "is" + " " + square)
+// }
+
+// square()
+
+// 6. Write a function that computes factorial of a number.
+
+// function factorial(){
+//     var number = +prompt('Enter a positive integer: ');
+
+// if (number < 0) {
+//     alert('Error! Factorial for negative number does not exist.');
+// }
+
+// else if (number === 0) {
+//     alert("The factorial of" + " " + number + " " + "is 1.");
+// }
+
+
+// else {
+//     let fact = 1;
+//     for (i = 1; i <= number; i++) {
+//         fact *= i;
+//     }
+//     alert("The factorial of" + " " + number + " " + "is" + " " + fact);
+// }
+// }
+
+// factorial()
+
+// 7. Write a function that take start and end number as inputs 
+// & display counting in your browser.
+
+// function count() {
+//     var start = +prompt("Enter the start");
+//     var end = +prompt("Enter the end");
+//     for (var i = start; i < end; i++) {
+//         document.write(i + "<br>")
+//     }
+// }
+
+// count()
+
+// 8. Write a nested function that computes hypotenuse of a 
+// right angle triangle. 
+// Hypotenuse2 = Base2 + Perpendicular2
+
+// function hypotenuse(){
+// var base = +prompt("Enter the value of base");
+// var perp = +prompt("Enter the value of perpendicular");
+// var hyp = (perp * perp + base * base ) / 2
+
+// alert("The hypotenuse is found to be" + " " + hyp)
+
+
+// function square (){
+//     var square = hyp * hyp
+//     alert("The square of hypotenuse is" + " " + square)
+// }
+// square()
+// }
+
+// hypotenuse()
+
+// 9. Write a function that calculates the area of a rectangle.
+//  A = width * height
+//  Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+// function area(w,h){
+//     var a = w * h;
+//     alert("The area of rectangle is " + " " + a)
+// }
+
+// area(5,4)
+
+// 10. Write a JavaScript function that checks whether a passed 
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as 
+// forward, e.g., madam.
+
+
+// function palindrome (){
+//   var word = prompt ("Enter Your Word")
+//    var check ;
+//    for (var i = word.length - 1 ; i >= 0 ; i-- ){
+// check += word [i]
+// }
+// if (check == "word"){
+//  document.write (word + " " +  "is palindrome word " + "<br>")
+// }
+// }
+// palindrome()
+
+// 11. Write a JavaScript function that accepts a string as a 
+// parameter and converts the first letter of each word of the 
+// string in upper case. 
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+// function uppercase(str)
+// {
+//   var array1 = str.split(' ');
+//   var newarray1 = [];
+    
+//   for(var i = 0; i < array1.length; i++){
+//       newarray1.push(array1[i].charAt(0).toUpperCase()+array1[i].slice(1));
+//   }
+//   return newarray1.join(' ');
+// }
+// document.write(uppercase("the quick brown fox"));
+
+// 12. Write a JavaScript function that accepts a string as a 
+// parameter and find the longest word within the string. 
+// EXAMPLE STRING : 'Web Development Tutorial'
+// EXPECTED OUTPUT : 'Development
+
+// function find_longest_word(str)
+// {
+//   var array1 = str.match(/\w[a-z]{0,}/gi);
+//   var result = array1[0];
+
+//   for(var x = 1 ; x < array1.length ; x++)
+//   {
+//     if(result.length < array1[x].length)
+//     {
+//     result = array1[x];
+//     } 
+//   }
+//   return result;
+// }
+// document.write(find_longest_word('Web Development Tutorial'));
+
+// 13. Write a JavaScript function that accepts two arguments, a 
+// string and a letter and the function will count the number of function 
+// Page 3 of 4
+// occurrences of the specified letter within the string. 
+// Sample arguments : 'JSResourceS.com', 'o
+
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
+
+document.write(char_count('JSResources.com', 'o'));
